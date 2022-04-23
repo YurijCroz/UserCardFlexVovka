@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #05CBA7;
+}
+
+.cardContainer {
+    margin: 10px 10px;
+    width: 440px;
+    height: 600px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.infoContainer {
+}
+
+.location {
+}
+
+.photoContainer {
+    width: 250px;
+    height: 250px;
+    border: 10px solid lightcyan;
+    border-radius: 50%;
+    overflow: hidden;
+    background-size: cover;
+}
+
+.photo {
+
+}
+
+.userName {
+    font-size: 36px;
+}
+
+.userInfo {
+    padding: 10px 15px;
+    font-weight: 600;
+}
+
+.btn {
+    width: 150px;
+    height: 60px;
+    background-color: #66B4FF;
+    border-radius: 10px;
+    font-size: 25px;
+    /**/
+    display: inline-block;
+    border: none;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.btn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.btn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.btn:hover span {
+    padding-right: 25px;
+}
+
+.btn:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+a {
+    outline: none;
+    color: #FFFFFF;
+}
+
+/*!Footer*/
+.footContainer {
+    height: 85px;
+    width: 100%;
+    background-color: #1F354C;
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+
+.footBlock {
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footBlockImg {
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    justify-content: space-around;
+    align-items: center;
+}
+
+i {
+    font-size: 50px;
+}
+
+.footBlockImg h4 {
+    color: crimson;
+}
+
+.footBlockImg p {
+    color: white;
+}
+
+.footBlockGT {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blockCenter {
+    border: 5px solid green;
+}
+
+.footBlockGroup {
+}
+.footBlockTotal {
+}
