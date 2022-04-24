@@ -18,25 +18,40 @@ body {
     justify-content: space-between;
     align-items: center;
     text-align: center;
+    position: relative;
 }
 
-.infoContainer {
+.check{
+    position: absolute;
+    top: 20px;
+    right: 20px;
 }
 
-.location {
+.check > i {
+    font-size: 35px;
+    color: #66B4FF;
+}
+
+.cardContainer > h4, h1, h3 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.location > i {
+    padding: 0px 5px 0px 0px;
+}
+
+.location{
+    padding: 15px 0px 0px 0px;
+    font-size: 16px;
 }
 
 .photoContainer {
     width: 250px;
     height: 250px;
-    border: 10px solid lightcyan;
+    border: 10px solid #66b5ff21;
     border-radius: 50%;
     overflow: hidden;
     background-size: cover;
-}
-
-.photo {
-
 }
 
 .userName {
@@ -46,6 +61,7 @@ body {
 .userInfo {
     padding: 10px 15px;
     font-weight: 600;
+    font-size: 16px;
 }
 
 .btn {
@@ -54,7 +70,6 @@ body {
     background-color: #66B4FF;
     border-radius: 10px;
     font-size: 25px;
-    /**/
     display: inline-block;
     border: none;
     transition: all 0.5s;
@@ -104,31 +119,30 @@ a {
 }
 
 .footBlock {
+    flex-basis: 33.333%;
     display: flex;
     flex-direction: row;
     align-content: flex-start;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 
-.footBlockImg {
-    display: flex;
-    flex-direction: row;
-    align-content: flex-start;
-    justify-content: space-around;
-    align-items: center;
+.footBlock i {
+    font-size: 30px;
+    color: #BC8C9A;
+    padding: 0px 5px 0px 0px;
 }
 
-i {
-    font-size: 50px;
+.footBlock h4 {
+    color: #BC8C9A;
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.footBlockImg h4 {
-    color: crimson;
-}
-
-.footBlockImg p {
+.footBlock p {
     color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;
 }
 
 .footBlockGT {
@@ -138,10 +152,6 @@ i {
 }
 
 .blockCenter {
-    border: 5px solid green;
-}
-
-.footBlockGroup {
-}
-.footBlockTotal {
+    border-left: 2px solid #284058;
+    border-right: 2px solid #284058;
 }
